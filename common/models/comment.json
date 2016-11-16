@@ -1,5 +1,5 @@
 {
-  "name": "comment",
+  "name": "Comment",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -23,7 +23,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "post": {
+      "type": "belongsTo",
+      "model": "Post",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
