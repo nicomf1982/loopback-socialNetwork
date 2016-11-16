@@ -1,0 +1,48 @@
+{
+  "name": "User_",
+  "plural": "users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "string",
+      "default": "null"
+    },
+    "karma": {
+      "type": "number",
+      "default": 0
+    },
+    "following": {
+      "type": [
+        "string"
+      ]
+    },
+    "followers": {
+      "type": [
+        "string"
+      ]
+    },
+    "lastLogin": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

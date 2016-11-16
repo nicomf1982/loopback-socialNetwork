@@ -1,0 +1,29 @@
+{
+  "name": "comment",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "numberOfLikes": {
+      "type": "number",
+      "default": 0
+    },
+    "numberOfDislikes": {
+      "type": "number",
+      "default": 0
+    },
+    "lastUpdate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
