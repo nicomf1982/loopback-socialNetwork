@@ -25,8 +25,14 @@ Main goals:
       - $owner ->deleteById, updateAttributes.
       - $authenticated -> create.
             
-    * Comment: $everyone -> READ
+    * Comment: 
+       - $everyone -> READ
        - $owner -> deleteById, updateAttributes
        - $authenticated -> create
               
 - [x] **Added sample Users** (Posts and Comments to test)
+- [ ] **Make Views**
+- [ ] **Define custom Routes**
+- [ ] **Add Remote Functions**
+- [ ] **Add Remote Hooks (for Data sanitization and validation)**
+
