@@ -2,8 +2,14 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var bodyParser = require('body-parser');
+var path = require('path');
 
 var app = module.exports = loopback();
+
+app.middleware('initial', bodyParser.urlencoded({extended: true})); //bodyParser
+app.set('view engine', 'ejs'); // LoopBack comes with EJS out-of-box
+app.set('views', path.resolve(__dirname, 'views')); // Define 'view' folder for ejs
 
 app.start = function() {
   // start the web server
